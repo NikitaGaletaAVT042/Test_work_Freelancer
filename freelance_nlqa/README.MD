@@ -34,15 +34,24 @@
 - Структура кода соответствует best-practices
 
 ## Компиляция и запуск проекта
-Установка зависимостей Рекомендуется использовать виртуальное окружение: python -m venv .venv source .venv/bin/activate # Linux/MacOS ..venv\Scripts\activate # Windows PowerShell Установите необходимые пакеты: pip install -r requirements.txt
 
-Запуск сервера Ollama Если вы используете локальный сервер Ollama (для LLM llama3.2), убедитесь, что он запущен и доступен. ollama serve llama3.2 Проверьте, что сервер работает и слушает нужный порт.
+Установка зависимостей:
+Рекомендуется использовать виртуальное окружение: python -m venv .venv source .venv/bin/activate 
+Linux/MacOS ..venv\Scripts\activate 
+Windows PowerShell Установите необходимые пакеты: pip install -r requirements.txt
 
-Подготовка данных Убедитесь, что файл с данными находится в папке data/: data/freelancer_earnings_bd.csv
+Запуск сервера: 
+Ollama Если вы используете локальный сервер Ollama (для LLM llama3.2), убедитесь, что он запущен и доступен. ollama serve llama3.2 
+Проверьте, что сервер работает и слушает нужный порт.
 
-Запуск CLI-приложения Запустите основную программу с указанием файла данных: python -m freelance_nlqa.main --data data/freelancer_earnings_bd.csv
+Подготовка данных:
+Убедитесь, что файл с данными находится в папке data/: data/freelancer_earnings_bd.csv
 
-Использование После запуска программа предложит ввести вопрос на естественном языке. Введите интересующий запрос или напишите exit для выхода.
+Запуск CLI-приложения:
+Запустите основную программу с указанием файла данных: python -m freelance_nlqa.main --data data/freelancer_earnings_bd.csv
+
+Использование:
+После запуска программа предложит ввести вопрос на естественном языке. Введите интересующий запрос или напишите exit для выхода.
 
 ## Пример вопросов 
 
