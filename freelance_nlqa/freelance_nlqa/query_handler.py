@@ -8,16 +8,14 @@ logger = logging.getLogger(__name__)
 
 
 def handle_query(question: str, df: pd.DataFrame, llm: LLMInterface) -> str:
-    #if not validate_question(question):
-        #logger.warning(f"Невалидный вопрос: {question}")
-        #return "Вопрос некорректен. Пожалуйста, задайте корректный вопрос."
+
 
     try:
         schema_description = generate_schema_description(df)
         sql_prompt = build_sql_prompt(schema_description, question)
         sql_query = llm.ask(sql_prompt).strip()
 
-        #logger.info(f"Сгенерированный SQL: {sql_query}")
+        
 
         try:
             # Оборачиваем df в словарь под названием 'Freelancers'
