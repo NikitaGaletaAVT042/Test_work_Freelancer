@@ -8,8 +8,8 @@ logger = logging.getLogger(__name__)
 
 class OllamaLLM(LLMInterface):
     def __init__(self):
-        self.api_url = config.OLLAMA_API_URL  # например http://localhost:11434
-        self.model = config.OLLAMA_MODEL_NAME  # например "llama3.2"
+        self.api_url = config.OLLAMA_API_URL  
+        self.model = config.OLLAMA_MODEL_NAME  
         self.timeout = config.REQUEST_TIMEOUT
 
     def ask(self, prompt: str) -> str:
