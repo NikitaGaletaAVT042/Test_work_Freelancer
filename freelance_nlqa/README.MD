@@ -10,7 +10,7 @@
 Использованы:
 - Python 3.10
 - Pandas, SQLite, Langchain
-- LLM (например, Ollama: `llama3`)
+- Ollama: `llama3.2`
 
 ## Эффективность и точность
 
